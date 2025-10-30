@@ -22,7 +22,7 @@ body {
 header {
     background: #2C7A7B;
     color: #fff;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 header .logo {
@@ -38,6 +38,7 @@ header nav {
 header nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
 header nav ul li {
@@ -58,72 +59,39 @@ header::after {
 
 /* Hero Section */
 .hero {
-    background: url('https://source.unsplash.com/1600x600/?nature,forest') no-repeat center center/cover;
-    color: #fff;
+    background: #E0F2F1;
     text-align: center;
-    padding: 120px 0;
+    padding: 100px 20px;
 }
 
 .hero h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-bottom: 20px;
+    color: #2C7A7B;
 }
 
 .hero p {
     font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.btn {
-    background: #68D391;
-    color: #fff;
-    padding: 12px 30px;
-    text-decoration: none;
-    font-weight: 700;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #48BB78;
-}
-
-/* About Section */
-.about {
-    padding: 80px 0;
-    background: #f9f9f9;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.about p {
     max-width: 700px;
-    margin: 0 auto 50px;
+    margin: 0 auto;
 }
 
-/* Cards */
-.cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+/* Content Section */
+.content {
+    padding: 60px 0;
+    background: #f9f9f9;
 }
 
-.card {
-    background: #fff;
-    padding: 30px;
-    flex: 1 1 250px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.card h3 {
+.content h3 {
+    margin-top: 40px;
     margin-bottom: 15px;
     color: #2C7A7B;
+}
+
+.content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
 }
 
 /* Footer */
@@ -132,4 +100,5 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    font-size: 0.9rem;
 }
